@@ -1,0 +1,3 @@
+modar o site para que seja aberto em varias resoluções e nao bugue
+criar um form para adicionar os times 
+criar uma roleta para ct ou tr
