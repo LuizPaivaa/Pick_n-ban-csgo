@@ -1,4 +1,4 @@
-        var quebrada = 0
+		var quebrada = 0
         var Mivet, Invet, Anvet, Ancvet, Nuvet, Ovet, Vert = false
 		function Vetomi(tipo){
 			var adicionar = document.getElementById("Mirage");
