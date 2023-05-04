@@ -1,5 +1,31 @@
 		var quebrada = 0
         var Mivet, Invet, Anvet, Ancvet, Nuvet, Ovet, Vert = false
+		function randomizarFotos() {
+			var fotos = [
+			  '_imagens/logoct.png',
+			  '_imagens/logotr.png'
+			];
+			
+			var index = Math.random() < 0.5 ? 0 : 1;
+			
+			document.getElementById('CT').style.display = index == 0 ? 'block' : 'none';
+			document.getElementById('TR').style.display = index == 1 ? 'block' : 'none';
+			
+			document.getElementById('CT').src = fotos[0];
+			document.getElementById('TR').src = fotos[1];
+			
+			window.randomizarFotos = function() {
+				var index = Math.random() < 0.5 ? 0 : 1;
+		  
+				document.getElementById('CT').style.display = index == 0 ? 'block' : 'none';
+				document.getElementById('TR').style.display = index == 1 ? 'block' : 'none';
+		  
+				document.getElementById('CT').src = fotos[0];
+				document.getElementById('TR').src = fotos[1];
+		  
+				window.randomizarFotos = null;
+			  };
+		  }
 		function Vetomi(tipo){
 			var adicionar = document.getElementById("Mirage");
 			if (tipo == 1){
@@ -31,6 +57,7 @@
 						document.getElementById("mira").style.visibility = "hidden";
 					}
 					adicionarSeletor()
+					randomizarFotos()
 				}
 			}
 		}
@@ -66,6 +93,7 @@
 					}
 					adicionarSeletor()
 				}
+				randomizarFotos()
 			}
 		}
 		function Vetoanu(tipo){
@@ -100,6 +128,7 @@
 					}
 					adicionarSeletor()
 				}
+				randomizarFotos()
 			}
 		}
 		function Vetoanc(tipo){
@@ -134,6 +163,7 @@
 					}
 					adicionarSeletor()
 				}
+				randomizarFotos()
 			}	
 		}
 		function Vetonu(tipo){
@@ -168,6 +198,7 @@
 					}
 					adicionarSeletor()
 				}
+				randomizarFotos()
 			}	
 		}
 		function Vetoov(tipo){
@@ -202,6 +233,7 @@
 					}
 					adicionarSeletor()
 				}
+				randomizarFotos()
 			}	
 		}
 		function Vetove(tipo){
@@ -235,6 +267,10 @@
 						}
 						adicionarSeletor()
 					}
+					randomizarFotos()
 				}	
             }
 		}
+
+		  
+		  
