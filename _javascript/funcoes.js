@@ -1,6 +1,16 @@
 		var quebrada = 0
         var Mivet, Invet, Anvet, Ancvet, Nuvet, Ovet, Vert = false
-		
+		function playSoundveto() {
+			var audio = new Audio('_audio/awp_02.mp3');
+			audio.volume = 0.3; // define o volume como 30%
+			audio.play();
+		  }
+
+		function playSoundgo() {
+			var audio = new Audio('_audio/csgo-gogogo.mp3');
+			audio.volume = 0.5; // define o volume como 50%
+			audio.play();
+		}  
 		function randomizarFotos() {
 			var fotos = [
 			  '_imagens/logoct.png',
@@ -46,6 +56,7 @@
                         Mivet = true;
 						adicionar.classList.remove("mapasvet");
 						document.getElementById("mira").style.visibility = "hidden";
+						playSoundveto()
 				    }
 			    }
             }
@@ -59,6 +70,7 @@
 					}
 					adicionarSeletor()
 					randomizarFotos()
+					playSoundgo()
 				}
 			}
 		}
@@ -81,6 +93,7 @@
                         Invet = true;
 						adicionar.classList.remove("mapasvet");
 						document.getElementById("inf").style.visibility = "hidden";
+						playSoundveto()
 				    }
                 }
 			}
@@ -95,6 +108,7 @@
 					adicionarSeletor()
 				}
 				randomizarFotos()
+				playSoundgo()
 			}
 		}
 		function Vetoanu(tipo){
@@ -116,6 +130,7 @@
                         Anvet = true;
 						adicionar.classList.remove("mapasvet");
 						document.getElementById("anu").style.visibility = "hidden";
+						playSoundveto()
 				    }
 			    }
             }
@@ -130,6 +145,7 @@
 					adicionarSeletor()
 				}
 				randomizarFotos()
+				playSoundgo()
 			}
 		}
 		function Vetoanc(tipo){
@@ -151,6 +167,7 @@
                         Ancvet = true;
 						adicionar.classList.remove("mapasvet");	
 						document.getElementById("anc").style.visibility = "hidden";
+						playSoundveto()
 				    }
 			    }
             }
@@ -165,6 +182,7 @@
 					adicionarSeletor()
 				}
 				randomizarFotos()
+				playSoundgo()
 			}	
 		}
 		function Vetonu(tipo){
@@ -186,6 +204,7 @@
                         Nuvet = true;
 						adicionar.classList.remove("mapasvet");
 						document.getElementById("nuk").style.visibility = "hidden";
+						playSoundveto()
 				    }
 			    }
             }
@@ -200,6 +219,7 @@
 					adicionarSeletor()
 				}
 				randomizarFotos()
+				playSoundgo()
 			}	
 		}
 		function Vetoov(tipo){
@@ -221,6 +241,7 @@
                         Ovet = true;
 						adicionar.classList.remove("mapasvet");
 						document.getElementById("ove").style.visibility = "hidden";
+						playSoundveto()
 				    }
 			    }
             }
@@ -235,6 +256,7 @@
 					adicionarSeletor()
 				}
 				randomizarFotos()
+				playSoundgo()
 			}	
 		}
 		function Vetove(tipo){
@@ -256,6 +278,7 @@
                         Vert = true;
 						adicionar.classList.remove("mapasvet");
 						document.getElementById("ver").style.visibility = "hidden";
+						playSoundveto()
 				    }
 			    }
 				if(quebrada == 6){
@@ -269,6 +292,7 @@
 						adicionarSeletor()
 					}
 					randomizarFotos()
+					playSoundgo()
 				}	
             }
 		}
