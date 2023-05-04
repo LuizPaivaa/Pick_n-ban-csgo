@@ -1,5 +1,6 @@
 		var quebrada = 0
         var Mivet, Invet, Anvet, Ancvet, Nuvet, Ovet, Vert = false
+		
 		function randomizarFotos() {
 			var fotos = [
 			  '_imagens/logoct.png',

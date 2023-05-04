@@ -5,11 +5,23 @@
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<link rel="stylesheet" href="_css/estilo.css"/>
-	<title>Pic'n Ban</title>
+	<title>Pick'n Ban</title>
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
 	<body>
-		<p><span id="nometimes"></span></p> 
+		<p>CS:GO MD1 Pick'n ban</p>
+    	<div id="match"></div>
+		<script>
+			// Obtém os parâmetros da URL
+			const urlParams = new URLSearchParams(window.location.search);
+			const team1 = urlParams.get('team1');
+			const team2 = urlParams.get('team2');
+	  
+			// Exibe o resultado da partida na página
+			const matchDiv = document.getElementById('match');
+			matchDiv.innerHTML = `${team1} VS ${team2}`;
+		  </script>
+
 			<ul id="Mapas">
 				<li id="foto01"><img id="Mirage" onmousemove="Vetomi(1)" onmouseout="Vetomi(2)" onclick="Vetomi(3)" class="mapasvet" src="_imagens/mirage.jpg"/><span id="mira">Mirage</span></li>
 				<li id="foto02"><img id="Inferno" onmousemove="Vetoin(1)" onmouseout="Vetoin(2)" onclick="Vetoin(3)" class="mapasvet" src="_imagens/inferno.jpg"/><span id="inf">Inferno</span></li>
@@ -22,6 +34,6 @@
 			<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 				<img id="CT" src="" style="display: none;">
 				<img id="TR" src="" style="display: none;">
-			  </div>
+			</div>
 	</body>
 </html>
