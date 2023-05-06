@@ -2,13 +2,13 @@
         var Mivet, Invet, Anvet, Ancvet, Nuvet, Ovet, Vert = false
 		function playSoundveto() {
 			var audio = new Audio('_audio/awp_02.mp3');
-			audio.volume = 0.3; // define o volume como 30%
+			audio.volume = 0.1; // define o volume como 10%
 			audio.play();
 		  }
 
 		function playSoundgo() {
 			var audio = new Audio('_audio/csgo-gogogo.mp3');
-			audio.volume = 0.5; // define o volume como 50%
+			audio.volume = 0.1; // define o volume como 50%
 			audio.play();
 		}  
 		function randomizarFotos() {
