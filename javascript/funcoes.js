@@ -1,20 +1,20 @@
 		var quebrada = 0
         var Mivet, Invet, Anvet, Ancvet, Nuvet, Ovet, Vert = false
 		function playSoundveto() {
-			var audio = new Audio('_audio/awp_02.mp3');
+			var audio = new Audio('audio/awp_02.mp3');
 			audio.volume = 0.1; // define o volume como 10%
 			audio.play();
 		  }
 
 		function playSoundgo() {
-			var audio = new Audio('_audio/csgo-gogogo.mp3');
+			var audio = new Audio('audio/csgo-gogogo.mp3');
 			audio.volume = 0.1; // define o volume como 50%
 			audio.play();
 		}  
 		function randomizarFotos() {
 			var fotos = [
-			  '_imagens/logoct.png',
-			  '_imagens/logotr.png'
+			  'imagens/logoct.png',
+			  'imagens/logotr.png'
 			];
 			
 			var index = Math.random() < 0.5 ? 0 : 1;
@@ -40,13 +40,13 @@
 		function Vetomi(tipo){
 			var adicionar = document.getElementById("Mirage");
 			if (tipo == 1){
-				arquivo = "_imagens/mirage2.jpg";
+				arquivo = "imagens/mirage2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "_imagens/mirage.jpg";	
+				arquivo = "imagens/mirage.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "_imagens/mirage3.jpg";
+				arquivo = "imagens/mirage3.jpg";
 			}
 			if(!Mivet){
 			    if (quebrada<=5){
@@ -63,7 +63,7 @@
 			if(quebrada == 6){
 				if(!Mivet){
 					function adicionarSeletor(){						
-						document. getElementById('Mirage'). src ='_imagens/mirage4.jpg'
+						document. getElementById('Mirage'). src ='imagens/mirage4.jpg'
 						adicionar.classList.remove("mapasvet");							
 						adicionar.classList.add("foto05");
 						document.getElementById("mira").style.visibility = "hidden";
@@ -77,13 +77,13 @@
 		function Vetoin(tipo){
 			var adicionar = document.getElementById("Inferno");
 			if (tipo == 1){
-				arquivo = "_imagens/inferno2.jpg";
+				arquivo = "imagens/inferno2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "_imagens/inferno.jpg";	
+				arquivo = "imagens/inferno.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "_imagens/inferno3.jpg";
+				arquivo = "imagens/inferno3.jpg";
 			}
 			if (quebrada<=5){
                 if(!Invet){
@@ -100,7 +100,7 @@
 			if(quebrada == 6){
 				if(!Invet){
 					function adicionarSeletor(){						
-						document. getElementById('Inferno'). src ='_imagens/inferno4.jpg'
+						document. getElementById('Inferno'). src ='imagens/inferno4.jpg'
 						adicionar.classList.remove("mapasvet");							
 						adicionar.classList.add("foto05");
 						document.getElementById("inf").style.visibility = "hidden";
@@ -114,13 +114,13 @@
 		function Vetoanu(tipo){
 			var adicionar = document.getElementById("Anubis");
 			if (tipo == 1){
-				arquivo = "_imagens/anubis2.jpg";
+				arquivo = "imagens/anubis2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "_imagens/anubis.jpg";	
+				arquivo = "imagens/anubis.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "_imagens/anubis3.jpg";
+				arquivo = "imagens/anubis3.jpg";
 			}
 			if(!Anvet){
 			    if (quebrada<=5){
@@ -137,7 +137,7 @@
 			if(quebrada == 6){
 				if(!Anvet){
 					function adicionarSeletor(){						
-						document. getElementById('Anubis'). src ='_imagens/anubis4.jpg'
+						document. getElementById('Anubis'). src ='imagens/anubis4.jpg'
 						adicionar.classList.remove("mapasvet");							
 						adicionar.classList.add("foto05");
 						document.getElementById("anu").style.visibility = "hidden";
@@ -151,13 +151,13 @@
 		function Vetoanc(tipo){
 			var adicionar = document.getElementById("Ancient");
 			if (tipo == 1){
-				arquivo = "_imagens/ancient2.jpg";
+				arquivo = "imagens/ancient2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "_imagens/ancient.jpg";	
+				arquivo = "imagens/ancient.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "_imagens/ancient3.jpg";
+				arquivo = "imagens/ancient3.jpg";
 			}
 			if(!Ancvet){
 			    if (quebrada<=5){
@@ -174,7 +174,7 @@
 			if(quebrada == 6){
 				if(!Ancvet){
 					function adicionarSeletor(){
-						document. getElementById('Ancient'). src ='_imagens/ancient4.jpg'	
+						document. getElementById('Ancient'). src ='imagens/ancient4.jpg'	
 						adicionar.classList.remove("mapasvet");											
 						adicionar.classList.add("foto05");
 						document.getElementById("anc").style.visibility = "hidden";
@@ -188,13 +188,13 @@
 		function Vetonu(tipo){
 			var adicionar = document.getElementById("Nuke");
 			if (tipo == 1){
-				arquivo = "_imagens/Nuke2.jpg";
+				arquivo = "imagens/Nuke2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "_imagens/Nuke.jpg";	
+				arquivo = "imagens/Nuke.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "_imagens/Nuke3.jpg";
+				arquivo = "imagens/Nuke3.jpg";
 			}
 			if(!Nuvet){
 			    if (quebrada<=5){
@@ -211,7 +211,7 @@
 			if(quebrada == 6){
 				if(!Nuvet){
 					function adicionarSeletor(){
-						document. getElementById('Nuke'). src ='_imagens/Nuke4.jpg';	
+						document. getElementById('Nuke'). src ='imagens/Nuke4.jpg';	
 						adicionar.classList.remove("mapasvet");						
 						adicionar.classList.add("foto05");
 						document.getElementById("nuk").style.visibility = "hidden";
@@ -225,13 +225,13 @@
 		function Vetoov(tipo){
 			var adicionar = document.getElementById("Overpass");
 			if (tipo == 1){
-				arquivo = "_imagens/Overpass2.jpg";
+				arquivo = "imagens/Overpass2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "_imagens/Overpass.jpg";	
+				arquivo = "imagens/Overpass.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "_imagens/Overpass3.jpg";
+				arquivo = "imagens/Overpass3.jpg";
 			}
             if(!Ovet){
 			    if (quebrada<=5){
@@ -248,7 +248,7 @@
 			if(quebrada == 6){
 				if(!Ovet){
 					function adicionarSeletor(){
-						document. getElementById('Overpass'). src ='_imagens/overpass4.jpg';
+						document. getElementById('Overpass'). src ='imagens/overpass4.jpg';
 						adicionar.classList.remove("mapasvet");
 						adicionar.classList.add("foto06");
 						document.getElementById("ove").style.visibility = "hidden";
@@ -262,13 +262,13 @@
 		function Vetove(tipo){
 			var adicionar = document.getElementById("Vertigo");
 			if (tipo == 1){
-				arquivo = "_imagens/Vertigo2.jpg";
+				arquivo = "imagens/Vertigo2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "_imagens/Vertigo.jpg";	
+				arquivo = "imagens/Vertigo.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "_imagens/Vertigo3.jpg";
+				arquivo = "imagens/Vertigo3.jpg";
 			}
             if(!Vert){
 			    if (quebrada<=5){
@@ -284,7 +284,7 @@
 				if(quebrada == 6){
 					if(!Vert){
 						function adicionarSeletor(){
-							document. getElementById('Vertigo'). src ='_imagens/vertigo4.jpg';
+							document. getElementById('Vertigo'). src ='imagens/vertigo4.jpg';
 							adicionar.classList.remove("mapasvet");
 							adicionar.classList.add("foto07");
 							document.getElementById("ver").style.visibility = "hidden";
