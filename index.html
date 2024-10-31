@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html>
+  <head>
+    <link rel="stylesheet" href="css/timestilo.css"/>
+    <title>Team Match</title>
+  </head>
+  <body>
+    <h1>Nome dos times</h1>
+    <form>
+      <label for="team1">Team 1:</label>
+      <input type="text" id="team1" name="team1"><br>
 
-<head>
-	<meta charset="UTF-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<link rel="stylesheet" href="css/estilo.css"/>
-	<title>Pick'n Ban</title>
-</head>
-<script language="javascript" src="javascript/funcoes.js"></script>
-	<body>
-		<p>CS:GO MD1 Pick'n ban</p>
-    	<div id="match"></div>
-		<script>
-			// Obtém os parâmetros da URL
-			const urlParams = new URLSearchParams(window.location.search);
-			const team1 = urlParams.get('team1');
-			const team2 = urlParams.get('team2');
-	  
-			// Exibe o resultado da partida na página
-			const matchDiv = document.getElementById('match');
-			matchDiv.innerHTML = `${team1} VS ${team2}`;
-		  </script>
+      <label for="team2">Team 2:</label>
+      <input type="text" id="team2" name="team2"><br>
 
-			<ul id="Mapas">
-				<li id="foto01"><img id="Mirage" onmousemove="Vetomi(1)" onmouseout="Vetomi(2)" onclick="Vetomi(3)" class="mapasvet" src="imagens/mirage.jpg"/><span id="mira">Mirage</span></li>
-				<li id="foto02"><img id="Inferno" onmousemove="Vetoin(1)" onmouseout="Vetoin(2)" onclick="Vetoin(3)" class="mapasvet" src="imagens/inferno.jpg"/><span id="inf">Inferno</span></li>
-				<li id="foto03"><img id="Anubis" onmousemove="Vetoanu(1)" onmouseout="Vetoanu(2)" onclick="Vetoanu(3)" class="mapasvet" src="imagens/anubis.jpg"/><span id="anu">Anubis</span></li>
-				<li id="foto04"><img id="Ancient" onmousemove="Vetoanc(1)" onmouseout="Vetoanc(2)" onclick="Vetoanc(3)" class="mapasvet" src="imagens/ancient.jpg"/><span id="anc">Ancient</span></li>
-				<li id="foto05"><img id="Nuke" onmousemove="Vetonu(1)" onmouseout="Vetonu(2)" onclick="Vetonu(3)" class="mapasvet" src="imagens/Nuke.jpg"/><span id="nuk">Nuke</span></li>
-				<li id="foto06"><img id="Overpass" onmousemove="Vetoov(1)" onmouseout="Vetoov(2)" onclick="Vetoov(3)" class="mapasvet" src="imagens/overpass.jpg"/><span id="ove">Overpass</span></li>
-				<li id="foto07"><img id="Vertigo" onmousemove="Vetove(1)" onmouseout="Vetove(2)" onclick="Vetove(3)" class="mapasvet" src="imagens/vertigo.jpg"/><span id="ver">Vertigo</span></li>
-			</ul>
-			<div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-				<img id="CT" src="" style="display: none;">
-				<img id="TR" src="" style="display: none;">
-			</div>
-	</body>
+      <button type="button" onclick="submitTeams()">Confirmar</button>
+    </form>
+
+    <script>
+      function submitTeams() {
+        var team1 = document.getElementById("team1").value;
+        var team2 = document.getElementById("team2").value;
+
+        // Redireciona para a página index.html com os parâmetros da URL
+        window.location.href = "ban.html?team1=" + team1 + "&team2=" + team2;
+      }
+    </script>
+  </body>
 </html>
