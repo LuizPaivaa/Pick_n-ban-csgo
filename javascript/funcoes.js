@@ -262,13 +262,13 @@
 		function Vetove(tipo){
 			var adicionar = document.getElementById("Vertigo");
 			if (tipo == 1){
-				arquivo = "imagens/Vertigo2.jpg";
+				arquivo = "imagens/vertigo2.jpg";
 			}
 			if (tipo == 2){
-				arquivo = "imagens/Vertigo.jpg";	
+				arquivo = "imagens/vertigo.jpg";	
 			}
 			if (tipo == 3){
-				arquivo = "imagens/Vertigo3.jpg";
+				arquivo = "imagens/vertigo3.jpg";
 			}
             if(!Vert){
 			    if (quebrada<=5){
